@@ -1,0 +1,33 @@
+// app.component.html
+<div>
+  <h1>Welcome to Our Website</h1>
+  <p>{{ userInput }}</p>
+  <button (click)="loadData()">Load Data</button>
+</div>
+
+<!-- Typo in the variable name -->
+<p>{{ mesage }}</p>
+
+<!-- app.component.ts -->
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+  userInput: string = '<img src="x" onerror="alert(\'XSS Attack\')">'; // XSS example input
+  message: string = 'Hello, user!'; // Typo in the variable name
+
+  // Performance issue: Unoptimized method
+  loadData() {
+    for (let i = 0; i < 1000000; i++) {
+      console.log('Loading data...'); // This will cause a performance issue due to excessive logging
+    }
+  }
+
+  ngOnInit() {
+    // Intentionally empty for this example
+  }
+}
