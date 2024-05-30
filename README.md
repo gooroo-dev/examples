@@ -1,7 +1,5 @@
-# GitHub Codespaces ♥️ Ruby on Rails
+# ♥️ Gooroo.dev performs code reviews, boosts the team
 
-Welcome to your shiny new Codespace running Rails! We've got everything fired up and running for you to explore Rails.
+This repository contains examples of Gooroo.dev reports. Please see example reviews: [https://github.com/gooroo-ai/example-app/pulls](https://github.com/gooroo-ai/example-app/pulls)
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
-
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+![Gooroo.dev performs awesome code review](https://raw.githubusercontent.com/gooroo-ai/example-app/ebcc2c8a3513bd030042b5bb492a583cca73bc57/app/assets/images/gooroo-angular2.png)
