@@ -1,7 +1,7 @@
 // app.component.html
 <div>
   <h1>Welcome to Our Website</h1>
-  <p [innerHTML]="userInput"></p> <!-- XSS vulnerability: userInput is bound using innerHTML -->
+  <p>{{ userInput }}</p>
   <button (click)="loadData()">Load Data</button>
 </div>
 
